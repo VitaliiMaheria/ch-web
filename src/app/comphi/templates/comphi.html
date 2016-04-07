@@ -1,0 +1,16 @@
+<h4>Companies</h4> 
+<button type="button" class="btn btn-sm btn-success" ng-click="newCompany()">Create</button>   
+
+<ul class="task-list">
+    <li class="task" h-collapse h-recursive ng-repeat="company in companies">
+        <input type="text" ng-model="company.name" /> |
+        <input type="number" ng-model="company.earnings" /> |
+        <span> {{company.totalEarnings}} </span>
+        <button class="btn btn-sm btn-warning" ng-click="saveCompany(company)">update</button>
+        <button class="btn btn-sm btn-danger" ng-click="deleteCompany(company.id)">delete</button>
+        <button type="button" class="btn btn-sm btn-success" ng-click="newCompany(company.id)">Create</button>   
+        <ul class="task-list">
+            <li h-recursive ng-repeat="company in company.companies"></li>
+        </ul>
+    </li>
+</ul>

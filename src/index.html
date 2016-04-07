@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>
+        Companies hierarhy
+    </title>
+    
+    <link href="source/styles/bootstrap.css" rel="stylesheet" />
+    <link href="source/styles/collapse.css" rel="stylesheet" />
+
+</head>
+
+<body ng-app="CompHi">
+    <div class="container" ng-view autoscroll="true"></div>
+
+    <!--Vendors start-->
+
+    <!--<script type="text/javascript" src="source/scripts/vendor/angular.js"></script>
+    <script type="text/javascript" src="source/scripts/vendor/angular-route.js"></script>
+    <script type="text/javascript" src="source/scripts/vendor/jquery-2.2.3.js"></script>
+    <script type="text/javascript" src="source/scripts/vendor/jquery-ui.js"></script>
+    <script type="text/javascript" src="source/scripts/vendor/bootstrap.js"></script>
+    <script type="text/javascript" src="source/scripts/vendor/ui-bootstrap-tpls-0.13.2"></script>
+    
+    -->
+    
+    <!--Vendor's libraries-->
+
+    <!-- vendor:js -->
+    <script type="text/javascript" src="source/scripts/vendor/jquery.js"></script>
+    <script type="text/javascript" src="source/scripts/vendor/angular.js"></script>
+    <script type="text/javascript" src="source/scripts/vendor/angular-route.js"></script>
+    <script type="text/javascript" src="source/scripts/vendor/bootstrap.js"></script>
+    <script type="text/javascript" src="source/scripts/vendor/ui-bootstrap-tpls-0.13.2.js"></script>
+
+    <!-- endinject -->
+
+    <!--Vendor's libraries End-->
+
+
+
+    <!--App start-->
+
+    <script type="text/javascript" src="app/compHiModule.js"></script>
+    <script type="text/javascript" src="app/compHiRoutes.js"></script>
+    <script type="text/javascript" src="app/run.js"></script>
+
+    <script type="text/javascript" src="app/comphi/compHiService.js"></script>
+    <script type="text/javascript" src="app/comphi/compHiCtrl.js"></script>
+    <script type="text/javascript" src="app/comphi/createCompanyCtrl.js"></script>
+    <script type="text/javascript" src="app/comphi/directives/hCollapse.js"></script>
+    <script type="text/javascript" src="app/comphi/directives/hRecursiveDirective.js"></script>
+
+    <!--App end-->
+
+</body>
+
+</html>
